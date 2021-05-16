@@ -1,0 +1,11 @@
+2.	Data Preparation
+2.1	City neighborhoods data from Wikipedia
+City data was extracted from the respective Wikipedia pages using Request and Beautifulsoup libraries in Python. There is only neighborhoods data in Wikipedia page, we need to first extract the neighborhoods data and get the coordinate from geopy.
+2.2	Weather and climate data from https://www.timeanddate.com/weather/usa/
+We can search for different city crime rate and types from this website, and use Beautifulsoup to scrape the data. The research here is limited to the most recent whole year.
+2.3	City crime data is from https://www.neighborhoodscout.com/il/
+We can search for different city crime rate and types from this website, and use Beautifulsoup to scrape the data. The research here is limited to the most recent whole year.
+2.4	Job data is form https://www.indeed.com/
+I tried to scrape the job listing from indeed. I used “data scientist” as a target position. I am sure most of the young people that plan to move these two cities will be interested in this kind of information.
+2.5	Foursquare location data
+Foursquare is a social location service that allows users to explore the world around them. We took advantage of Foursquare data to extract venue based information for all of the neighborhoods under within two cities. The call to the API returns a JSON file and we need to turn that into pandas data-frame.
